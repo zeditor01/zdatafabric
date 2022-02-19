@@ -1,0 +1,107 @@
+ZEDITOR PLAN
+
+cdc.html 
+  using
+    cdcu1: concepts and environment
+	cdcu2: devops options
+	cdcu3: chcclp scripting
+	cdcu4: security
+	cdcu5: container deployment
+  zos
+    cdcz1: Db2 z/OS 
+	cdcz2: IMS 
+	cdcz3: VSAM 
+  linux
+    cdcl1: db2luw
+	cdcl2: kafka
+	cdcl3: remote Db2 zos 
+	cdcl4: remote VSAM 
+	
+	
+  using
+    cdcu1: concepts and environment
+	  1. Landscape for worked examples
+	  2. CDC Concepts
+	  3. CDC Devops Workflows
+	cdcu2: devops options
+      1. Devops Requirements for CDC 
+	  2. Management Console UI 
+	  3. CHCCLP Scripting 
+	  4. A Hybrid Devops Strategy
+	cdcu3: chcclp scripting 
+      1. A set of scripts for common devops tasks 
+	  2. CHCCLP execution platform options ( MC AS USS JCL ) 
+	  3. CHCCLP for Monitoring
+	cdcu4: security 
+	  1. Authentication and Encryption for Administration Tasks
+	  2. Authentication and Encryption for CDC Replication Flows
+	  3. Integrating mTLS on LUW with AT-TLS on z/OS  
+	  4. Implementation Example
+	cdcu5: container deployment
+	  1. Reasons to consider deploying CDC as container images
+	  2. Creating and Deploying a CDC for Kafka Container 
+	  3. Deploying CDC for Kafka inside z/OS Container Extensions
+
+  zos
+    cdcz1: Db2 z/OS  
+	  1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. SMPE Installation
+	  4. Create the CDC Instance
+	  5. Configure the z/OS Environment
+	  6. Configure the Db2 z/OS Environment
+	  7. Integrate with the wider CDC Landscape
+	cdcz2: IMS 
+      1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. SMPE Installation
+	  4. Create the CDC Instance
+	  5. Configure the z/OS Environment
+	  6. Configure the IMS Environment
+	  7. Integrate with the wider CDC Landscape
+	cdcz3: VSAM 
+	  1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. SMPE Installation
+	  4. Create the CDC Instance
+	  5. Configure the z/OS Environment
+	  6. Configure the VSAM Environment
+	  7. Integrate with the wider CDC Landscape
+
+  linux
+    cdcl1: db2luw 
+      1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. CDC Agent Installer
+	  4. Configure the Linux Environment
+	  5. Configure the Db2 LUW Ennvironment
+	  6. Create the CDC Instance
+	  7. Integrate with the wider CDC Landscape
+	cdcl2: kafka 
+      1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. CDC Agent Installer
+	  4. Configure the Linux Environment
+	  5. Configure the Kafka Ennvironment
+	  6. Create the CDC Instance
+	  7. Integrate with the wider CDC Landscape
+	cdcl3: remote Db2 zos  
+      1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. CDC Agent Installer
+	  4. Configure the Linux Environment
+	  5. Configure the Db2 LUW Ennvironment
+	  6. Create the CDC Instance
+	  7. Integrate with the wider CDC Landscape
+	cdcl4: remote VSAM 
+      1. Intro 
+	  2. High Level Review of Implementation Steps
+	  3. CDC Agent Installer
+	  4. Configure the Linux Environment
+	  5. Configure the Db2 LUW Ennvironment
+	  6. Create the CDC Instance
+	  7. Integrate with the wider CDC Landscape	
+	
+	
+	
+	

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZEDITOR</title> 
+<link rel="stylesheet" href="/recipes/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body style="margin:0px;"> 
+
+<!-- Persistent Site Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-blue">
+	<div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block"><img src="/recipes/images/ZICON.png" height=25px></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#zones" class="w3-button w3-block">Technical Zones</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#about" class="w3-button w3-block">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- Start of Page Content -->
+<div class="w3-content w3-padding-large w3-light-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+                <h2>Z Data at REST</h2>
+                <p>The ongoing costs of making low-latency copies of z/OS data for every new application that needs current operational data access are <b>HUGE</b>, not 
+				to mention the layers of technical debt that can be added to your systems to be maintained forwever. 
+				Some use cases may genuinely have some need for a physical copy of the mainframe data, but many use cases can be served better and cheaper by just deploying an 
+				API to serve the data on demand to any application on the internet</p> 
+				
+				<p style="margin-left:50px;">It is true that the predominant pattern for serving new cloud applications with current operational data is to stream the data off the mainframe 
+				to a digital integration hub of some sort. Many sites are so familiar with that pattern that they don't fully evaluate the merits of serving APIs 
+				directly from the original data source.</p> 
+												
+				<p>The articles in this section contain worked examples of how to use various IBM software solutions to serve data and information APIs directly from z/OS.</p>
+
+</div>
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+
+	<h3 align=center>IBM's Z Data at REST Options</h3>
+    <p>IBM's premier solution for serving REST APIs from mainframe systems is z/OS Connect Enterprise Edition. It is designed to act as an API gateway 
+	into z/OS transactions as well as z/OS data.</p> 
+	<p>This sets of papers is focussed on the details of how the underlying data services are created and implemented. They also show how APIs can be published 
+	(whether by z/OS Connect, or API Connect) based on those data services.</p>
+
+		  
+				 
+    <table style="width:100%; border:1px;">
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <a href="/recipes/docs/NA_CDC/cdcu1.html"><button class="w3-button w3-blue w3-padding-large" style="width:280px">DB2 Distributed Data Facility</button></a>
+            </td>
+			<td style="vertical-align:top;"> 
+            <p>DB2 DDF is a standard component of Db2 z/OS.</p>
+				<ul style="list-style:none; padding:0px; margin-left:15px; line-height:24px;">
+				<li>It can serve REST APIs based on calls to SQL and Stored Procedures.
+				<li>It can serve a variety of SQL-based APIs ( JDBC, ODBC etc... ).
+                <li>It is tightly integrated into the Db2 z/OS service (Reliability, Performance, Secuirty etc...)
+				</ul> 			
+			<p>This section provides examples of how DDF can be used to serve APIs.</p>
+            </td>
+        </tr>  
+    </table> 
+	<hr>
+    <table style="width:100%; border:1px;">	
+        <tr>
+            <td style="width:30%; vertical-align: center;">  
+            <button class="w3-button w3-blue w3-padding-large"  style="width:280px"><a href="/recipes/docs/NA_CDC/cdc01.html">Data Virtualisation Manager</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>DVM is xxxx</p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:24px;">
+				<li>It supports many different z/OS data sources.
+				<li>It intgegrates with ZCEE.
+				<li>etc.
+				</ul> 			
+			<p>This section....</p>
+            </td>
+        </tr> 
+    </table> 
+	<hr>
+    <table style="width:100%; border:1px;">			
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <button class="w3-button w3-blue w3-padding-large"  style="width:280px"><a href="/recipes/docs/NA_CDC/cdc01.html">Query Management Facility</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>QMF contains a treasure trove of data integration capabilities. </p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:24px;">
+				<li>Data Service Manager.
+				<li>XXX.
+				<li>YYY.
+				</ul> 			
+			<p>This section ....</p>
+            </td>
+        </tr> 			
+    </table> 
+
+	<div class="w3-center w3-dark-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+	<p>copyright &copy; zeditor.org</p>
+    </div>
+
+</div>
+
+<!-- End of Page Content   -->
+
+
+	
+
+	
+</body>
+</html>

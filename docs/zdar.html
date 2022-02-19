@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZEDITOR</title> 
+<link rel="stylesheet" href="/recipes/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px} 
+
+
+</style>
+<body style="margin:0px;"> 
+
+<!-- Persistent Site Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-blue">
+	<div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block"><img src="/recipes/images/ZICON.png" height=25px></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#zones" class="w3-button w3-block">Technical Zones</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#about" class="w3-button w3-block">About</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start of Page Content -->
+
+
+
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px">
+	  <h2>3 Patterns for a Data Fabric for Mainframe Data</h2>
+  <!-- Grid -->
+  <div class="w3-row-padding w3-center"  style="max-width:1100px" id="zones">
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-grey w3-large w3-padding-16"><a href="/recipes/docs/zdim.html">Z Data in Motion</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-green w3-large w3-padding-16"><a href="/recipes/docs/zdar.html">Z Data at REST</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-grey w3-large w3-padding-16"><a href="/recipes/docs/eris.html">ERIS</a></li>
+      </ul>
+    </div>
+	
+  </div>
+
+
+
+<div class="w3-content w3-small w3-light-grey" style="max-width:1100px;line-height:16px;margin-bottom:20px;margin-top:20px">
+<p>The "Z Data at REST" pattern is motivated by avoiding the costs, complexity and timescales of moving the data off Z, and making use of the wide range of data service solutions that 
+exist to serve data direcly from z/OS. Cloudpak for Data supports a data virtualisation layer that accesses data wherever it is, so that you don't 
+need to build and maintain constant data movement processes to maintain a copy of the mainframe data.</p>
+
+<center><img src="/recipes/images/neale/zdar.png" style="width:800px"></center>
+
+<p>The "Z Data at REST" pattern works well with Cloudpak for Data, but it also works well with ANY application that is able to consume industry-standard APIs, such as REST, 
+SQL, ODBC, JDBC and so on.</p>
+<p>The worked examples in this section show how z/OS data resources can be surfaced using a range of APIs (REST, SQL, ODBC, JDBC etc....) for consumption by cloud applications directly, or 
+by Data and AI integration solutions like Cloudpak for Data.</p>
+
+</div>
+
+
+<div class="w3-content w3-small" style="max-width:1100px">
+
+
+				 
+    <table style="width:100%; border:1px;">
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <a href="/recipes/docs/NA_CDC/ddfu1.html"><button class="w3-button w3-blue w3-padding-small" style="width:280px">DB2 Distributed Data Facility</button></a>
+            </td>
+			<td style="vertical-align:top;"> 
+            <p>DB2 DDF is a standard component of Db2 z/OS, that supports both REST APIs and SQL-based APIs. </p>
+				<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>It can serve REST APIs based on calls to SQL and Stored Procedures.
+				<li>It can serve a variety of SQL-based APIs ( JDBC, ODBC etc... ).
+                <li>It is tightly integrated into the Db2 z/OS service (Data Sharing Availability, Reliability, Performance, Secuirty etc...)
+				</ul> 			
+
+            </td>
+        </tr>  
+
+        <tr>
+            <td style="width:30%; vertical-align: center;">  
+            <button class="w3-button w3-blue w3-padding-small"  style="width:280px"><a href="/recipes/docs/NA_CDC/dvmu1.html">Data Virtualisation Manager</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>DVM provides herterogeneous data connectivity for data sources like IMS, VSAM, Syslogs, Adabas, Datacom etc...</p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>It provides SQL access to heterogeneous data sources, both locally on z/OS, and remotely from LUW clients.
+				<li>It can be used in conjunction with z/OS Connect to provide REST APIs to access it's range of heterogeneous data sources.
+				<li>It includes a DRDA Application Server, which allows heterogenous data sources to be consumed by Db2 using constructs like Table Functions and Aliases.
+				</ul> 			
+
+            </td>
+        </tr> 
+		
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <button class="w3-button w3-blue w3-padding-small"  style="width:280px"><a href="/recipes/docs/NA_CDC/qmfu1.html">Query Management Facility</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>QMF (the original green-screen reporting tool from the early days of Db2 z/OS) contains a treasure trove of data integration capabilities.</p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>Modern LUW and browser dashboard development.
+				<li>QMF Data Service to develop results sets as callable objects.
+				<li>QMF Server (zIIP eligible) to serve up query results sets by REST and SQL APIs.
+				</ul> 			
+
+            </td>
+        </tr> 			
+    </table> 
+
+
+	<div class="w3-center w3-dark-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+	<p>copyright &copy; zeditor.org</p>
+    </div>
+
+</div>
+
+<!-- End of Page Content   -->
+
+
+	
+</div>
+	
+</body>
+</html>

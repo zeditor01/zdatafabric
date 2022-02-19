@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZEDITOR</title> 
+<link rel="stylesheet" href="/recipes/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+
+</style>
+<body style="margin:0px;"> 
+
+<!-- Persistent Site Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-blue">
+	<div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block"><img src="/recipes/images/ZICON.png" height=25px></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#zones" class="w3-button w3-block">Technical Zones</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#about" class="w3-button w3-block">About</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+<!-- Start of Page Content -->
+
+<!-- Common Header for CDC Papers -->
+
+<div class="w3-content w3-light-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+<h2>CDC Replication Worked Examples</h2>
+
+<!-- A Grid with hyperlinks to the CDC papers -->
+  <div class="w3-row-padding">
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-16">Using CDC</li>
+        <li><a href="/recipes/docs/NA_CDC/cdcu1.html">Environment for CDC Worked Examples.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcu2.html">Devops Options for CDC.</a></li> 
+        <li><a href="/recipes/docs/NA_CDC/cdcu3.html">CHCCLP Scripting.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcu4.html">Security for CDC (LDAP and TLS).</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcu5.html">Container Deployment.</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-16">Deploying z/OS CDC Agents</li>
+        <li><a href="/recipes/docs/NA_CDC/cdcz1.html">Setting up CDC for Db2 on z/OS.</a></li> 
+        <li><a href="/recipes/docs/NA_CDC/cdcz2.html">Setting up Classic CDC for IMS.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcz3.html">Setting up Classic CDC for VSAM.</a></li> 
+      </ul>
+    </div>
+	
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-16">Deploying Linux CDC Agents</li>
+        <li><a href="/recipes/docs/NA_CDC/cdcl1.html">Setting up CDC for Db2 on Linux.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcl2.html">Setting up CDC for Kafka.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcl3.html">Setting up remote CDC Capture for Db2 z/OS.</a></li>
+        <li><a href="/recipes/docs/NA_CDC/cdcl4.html">Setting up remote CDC Capture for VSAM.</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+<hr>
+
+</div>
+
+<!-- Page Contents Here -->
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+<h2>Setting up Classic CDC for VSAM.</h2>
+
+   <!-- Grid -->
+  <div class="w3-row-padding">
+
+    <div class="w3-third w3-margin-bottom" style="width:100%">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow">
+		<li>Author: Neale Armstrong</li>
+		<li>Date Last Updated: January 2022</li>
+      </ul>
+    </div>
+
+  </div>
+
+<hr>
+
+<div id="toc_container">
+
+  <p class="toc_title">Table of Contents</p>
+    <ul class="toc_list">
+      <li><a href="#abstract">Abstract</a>   
+      <li><a href="#1.0">CDC Concepts</a>
+        <ul>
+          <li><a href="#1.1">1.1 CDC Components</a></li>
+          <li><a href="#1.2">1.2 CDC Devops Workflows</a></li> 
+          <li><a href="#1.1">1.3 CDC Communication Flows</a></li>
+        </ul>
+      <li><a href="#2.0">2. Environment Used</a> 
+	    <ul>
+          <li><a href="#1.1">2.1 Network Environment</a></li>
+          <li><a href="#1.2">2.2 OS Platforms Used</a></li> 
+          <li><a href="#1.1">2.3 Code Sourcing</a></li>
+        </ul>
+      <li><a href="#App">Appendix</a>
+    </ul>
+</div>
+
+<hr>
+<h2 id="abstract">Abstract</h2>
+<p>words</p>
+
+<hr>
+<h2 id="1.0">1. CDC Concepts</h2>
+<p>words</p>
+
+ 
+<h2 id="1.1">1.1 CDC Components</h2>
+<p>words</p>
+
+ 
+<h2 id="1.1">1.2 CDC Devops Workflows</h2>
+<p>words</p>
+
+ 
+<h2 id="1.1">1.3 CDC Communication Flows</h2>
+<p>words</p>
+
+<hr>
+<h2 id="2.0">2. Environment Used</h2>
+<p>words</p>
+
+ 
+<h2 id="2.1">2.1 Network Environment</h2>
+<p>words</p>
+
+ 
+<h2 id="2.2">2.2 OS Platforms Used</h2>
+<p>words</p>
+
+ 
+<h2 id="2.3">2.3 Code Sourcing</h2>
+<p>words</p>
+
+<hr>
+<h2 id="App">Appendix</h2>
+<p>words</p>
+
+
+
+<pre>
+<code>some cool code   </code>
+<code>some very cool code   </code>
+</pre>	
+
+
+
+
+
+<!-- End of Page Content -->
+</div>
+	
+</body>
+</html>

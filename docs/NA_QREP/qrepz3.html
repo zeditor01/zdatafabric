@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZEDITOR</title> 
+<link rel="stylesheet" href="/recipes/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+.greendot {
+  height: 12px;
+  width: 12px;
+  background-color: #7CFC00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.greydot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+spandarkblue {
+  background-color: #0000ff;
+  color: white;
+}
+
+spanlightblue {
+  background-color: #00ffff;
+  color: black;
+}
+
+spanyellow {
+  background-color: #ffff00;
+  color: black;
+}
+</style>
+<body style="margin:0px;"> 
+
+<!-- Persistent Site Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-blue">
+	<div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block"><img src="/recipes/images/ZICON.png" height=25px></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#zones" class="w3-button w3-block">Technical Zones</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#about" class="w3-button w3-block">About</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+<!-- Start of Page Content -->
+
+<!-- Common Header for QREP Papers -->
+
+<div class="w3-content w3-light-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+<h2>Q Replication Worked Examples</h2>
+
+<!-- A Grid with hyperlinks to the QREP papers   -->
+  <div class="w3-row-padding">
+
+    <div class="w3-third">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-4">Using Q Replication</li>
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepu1.html"> Environment for QREP Worked Examples.</a></li> 
+		<li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepu2.html"> Devops Options for QREP.</a></li> 
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepu3.html"> Security for QREP.</a></li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-4">Deploying QREP Servers</li>
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepz1.html"> Setting up QREP for Db2 on z/OS.</a></li> 
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepz2.html"> Setting up ASNMON on z/OS.</a></li>
+        <li class="w3-small"><span class="greendot"></span><a href="/recipes/docs/NA_QREP/qrepz3.html"> Setting up QREP for Db2 on Linux.</a></li> 
+      </ul>
+    </div>
+	
+    <div class="w3-third">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow" style="width:100%">
+        <li class="w3-black w3-large w3-padding-4">Managing QREP Devops</li>
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepl1.html"> ASNCLP Scripting.</a></li>
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepl2.html"> ASNMON Alerting.</a></li>
+        <li class="w3-small"><span class="greydot"></span><a href="/recipes/docs/NA_QREP/qrepl3.html"> ZOWE Devops Console for QREP.</a></li>
+      </ul>
+    </div>
+
+  </div>
+<!-- End Grid with hyperlinks to the CDC papers -->
+
+<hr>
+
+</div>
+
+<!-- Page Contents Here -->
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+<h2>Setting up QREP for Db2 on Linux.</h2>
+
+
+   <!-- Grid -->
+  <div class="w3-row-padding">
+
+    <div class="w3-third w3-margin-bottom" style="width:100%">
+      <ul class="w3-ul w3-border w3-left w3-hover-shadow">
+		<li>Author: Neale Armstrong</li>
+		<li>Date Last Updated: ... <img src="/recipes/images/roadwork.jpg" style="width:25px">Targetted for February 2022</li>
+      </ul>
+    </div>
+
+  </div>
+
+<hr>
+
+<div id="toc_container">
+
+<p class="toc_title">Table of Contents</p>
+<ul class="toc_list">
+<li><a href="#abstract">Abstract</a>   
+<li><a href="#1.0">1 AAA.</a>
+<ul>
+  <li><a href="#1.1">1.1 xxx</a></li> 
+  <li><a href="#1.2">1.2 yyy</a></li> 
+  <li><a href="#1.3">1.3 zzz</a></li>
+</ul>
+<li><a href="#2.0">2. BBB</a> 
+<ul>
+  <li><a href="#2.1">1.1 xxx</a></li> 
+  <li><a href="#2.2">1.2 yyy</a></li> 
+  <li><a href="#2.3">1.3 zzz</a></li>
+</ul>
+<li><a href="#3.0">3. CCC</a>
+<ul>
+  <li><a href="#3.1">3.1 xxx</a></li>
+  <li><a href="#3.2">3.2 yyy</a></li>
+  <li><a href="#3.3">3.3 zzz</a></li>
+</ul> 
+
+<li><a href="#4.0">4. DDD</a>
+<ul>
+  <li><a href="#4.1">4.1 xxx</a></li>
+  <li><a href="#4.2">4.2 yyy</a></li> 
+  <li><a href="#4.3">4.3 zzz</a></li>
+</ul>
+
+<li><a href="#App">Appendix</a>
+</ul>
+</div>
+
+<hr>
+
+
+<h2 id="abstract"> Abstract</h2>
+
+<br><hr>
+
+<h2 id="1.0">1. AAA</h2>  
+<h3 id="1.1">1.1 xxx</h3> 
+
+<h2 id="2.0">2. BBB</h2>  
+
+<h2 id="3.0">3. CCC</h2>  
+<h3 id="3.1">3.1 xxx</h3> 
+<h3 id="3.2">3.2 xxx</h3>
+
+<h2 id="4.0">4. xxx</h2>  
+<h3 id="4.1">4.1 xxx</h3> 
+<h3 id="4.2">4.2 xxx</h3>
+
+
+
+<hr>
+<h2 id="App">Appendix</h2>
+
+
+
+<!-- End of Page Content -->
+</div>
+	
+</body>
+</html>

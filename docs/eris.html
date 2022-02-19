@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZEDITOR</title> 
+<link rel="stylesheet" href="/recipes/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px} 
+
+
+</style>
+<body style="margin:0px;"> 
+
+<!-- Persistent Site Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-blue">
+	<div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block"><img src="/recipes/images/ZICON.png" height=25px></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#zones" class="w3-button w3-block">Technical Zones</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/recipes/index.html#about" class="w3-button w3-block">About</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start of Page Content -->
+
+
+
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px">
+	  <h2>3 Patterns for a Data Fabric for Mainframe Data</h2>
+  <!-- Grid -->
+  <div class="w3-row-padding w3-center"  style="max-width:1100px" id="zones">
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-grey w3-large w3-padding-16"><a href="/recipes/docs/zdim.html">Z Data in Motion</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-grey w3-large w3-padding-16"><a href="/recipes/docs/zdar.html">Z Data at REST</a></li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-green w3-large w3-padding-16"><a href="/recipes/docs/eris.html">ERIS</a></li>
+      </ul>
+    </div>
+	
+  </div>
+
+
+
+<div class="w3-content w3-small w3-light-grey" style="max-width:1100px;line-height:16px;margin-bottom:20px;margin-top:20px">
+<p>ERIS (Environment for Realtime Information Services) uses a combination of tools and techniques from both "Z Data in Motion" amd "Z Data at REST" patterns to provide a 
+framework for providing realtime data APIs for multiple purposes, by utilising the industry-leading IBM Z hardware platform, with a combination of 
+z/OS systems of record, and containerised data and analtical solutions on Linux.</p>
+<center><img src="/recipes/images/neale/eris.png" style="width:800px"></center>
+
+
+<p>The ERIS approach is an enabler for the Hybrid Cloud solutions that most mainframe-using enterprises seek. They want to move large portions of their business to 
+the public cloud, but need tight realtime integration with the systems of record that will continue to run on mainframe for many years to come. By deploying the now-ubiquitous 
+Digital Integration Hub building blocks on a containerised Linux for Z platform you get a free ride on all the high availability and disaster recovery infrastructure that already exists 
+for the z/OS systems of record, and you get a more secure environment for all the open source and containerised solutions used for providing digital integration APIs.</p>
+
+</div>
+
+
+<div class="w3-content w3-small" style="max-width:1100px">
+
+
+				 
+    <table style="width:100%; border:1px;">
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <a href="/recipes/docs/NA_CDC/cpdu1.html"><button class="w3-button w3-blue w3-padding-small" style="width:280px">Cloudpak for Data</button></a>
+            </td>
+			<td style="vertical-align:top;"> 
+            <p>Cloudpak for Data.</p>
+				<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>Is served by Db2 integrated synchronisation for access to current Db2 data in transactions or analytical formats.
+				<li>Supports multiple optional services spannng data governance and AI.
+                <li>Is deployable on any Openshift platform: Cloud, Midrange, Linux for Z etc...
+				</ul> 			
+
+            </td>
+        </tr>  
+
+        <tr>
+            <td style="width:30%; vertical-align: center;">  
+            <button class="w3-button w3-blue w3-padding-small"  style="width:280px"><a href="/recipes/docs/NA_CDC/cpiu1.html">Cloudpak for Integration</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>Cloudpak for Integration</p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>Accepts feeds from non-DB2 data.
+				<li>Supports curation of data for services.
+                <li>Publishes and Manages APIs on curated data
+				</ul> 			
+
+            </td>
+        </tr> 
+		
+        <tr>
+            <td style="width:30%; vertical-align: center;"> 
+            <button class="w3-button w3-blue w3-padding-small"  style="width:280px"><a href="/recipes/docs/NA_CDC/meshu1.html">Z Data Mesh</a></button>
+            </td>
+			<td style="vertical-align: top;"> 
+            <p>Z Data Mesh. </p> 
+			<ul style="list-style:none; padding:0px; margin-left:15px; line-height:16px;">
+				<li>All APIs from raw Z data, or curated data, managed inside a secure Z hardware platform (ErisONE).
+				<li>Platform for Data Owners to manage how data is published for consumption.
+				<li>YYY.
+				</ul> 			
+
+            </td>
+        </tr> 			
+    </table> 
+
+
+	<div class="w3-center w3-dark-grey" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+	<p>copyright &copy; zeditor.org</p>
+    </div>
+
+</div>
+
+<!-- End of Page Content   -->
+
+
+	
+</div>
+	
+</body>
+</html>
